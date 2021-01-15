@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom css */
+
+.header {
+}
+
+.contents-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 336px;
+  height: 51px;
+  float: left;
+}
+
+.logo-link {
+  display: block;
+}
+
+.logo-image {
+  display: block;
+  width: 336px;
+  height: 51px;
+}
+
+.contact-number {
+  text-align: right;
+  float: right;
+}
+
+.header > .contact-number > .phone-number {
+  font-size: 24px;
+}
+
+.header .contact-text {
+  font-size: 14px;
+  margin-top: 16px;
+  color: #888;
+}
+
+.clearbox {
+  clear: both;
+}
+
+.gnb {
+  background-color: #434547;
+}
+
+.gnb-item {
+  float: left;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gnb-item.item4 {
+  border-right: none;
+}
+
+.gnb-link {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.gnb-link:hover {
+  background: #62bfe6;
+}
+
+.contents-01-main-image {
+  width: 100%;
+}
+
+.contents-02 {
+  position: relative;
+  top: -50px;
+}
+
+.contents-02-article {
+  width: 25%;
+  float: left;
+  color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  /*
+    content-box : 25%(250px) + 60px; => 310px;
+    border-box : 25%(250px) (padding 60px 포함됨); => 250px
+  */
+}
+
+.contents-02-article.article-01 {
+  background: #57aacd;
+}
+
+.contents-02-article.article-02 {
+  background: #55b0d6;
+}
+
+.contents-02-article.article-03 {
+  background: #5bb7de;
+}
+
+.contents-02-article.article-04 {
+  background: #62bfe6;
+}
+
+.contents-02-article .icon {
+  margin-bottom: 20px;
+}
+
+.contents-02-article .title {
+  font-size: 20px;
+  line-height: 2;
+}
+
+.contents-02-article .paragraph {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.contents-03-article {
+  float: left;
+  width: calc(50% - 40px);
+  padding: 50px 0;
+}
+
+.contents-03-article.bottom {
+  border-top: 1px solid #ddd;
+}
+
+.contents-03-article.left {
+  margin-right: 40px;
+}
+
+.contents-03-article .icon {
+  width: 100px;
+  height: 100px;
+  background: #62bfe6;
+  display: block;
+  float: left;
+}
+
+.contents-03-article .text-container {
+  float: left;
+  width: calc(100% - 120px); /* calculate : 50% - 100px : 연산자 양쪽에 공백 */
+  margin-left: 20px;
+}
+
+.contents-03-article .title {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.contents-03-article .paragraph {
+  font-size: 14px;
+  line-height: 2;
+  color: #777;
+  margin-top: 10px;
+}
+
+.contents-04 {
+  margin-bottom: 100px;
+}
+
+.contents-04-article {
+  width: 33.333%;
+  float: left;
+}
+
+.contents-04-article .title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contents-04-article .image {
+  margin-bottom: 20px;
+}
+
+.contents-04-article .paragraph {
+  font-size: 14px;
+  color: #777;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.contents-04-article .more-link {
+  display: inline-block;
+  padding: 20px;
+  color: #fff;
+  background: #62bfe6;
+  text-decoration: none;
+}
+
+.contents-04-box {
+  width: 100%;
+  background-color: #57aacd;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.contents-04-box .title {
+}
+
+.contents-04-box .sub-title {
+  font-size: 24px;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+}
+
+.contents-04-box .time {
+  font-size: 14px;
+  line-height: 4;
+}
+
+.contents-04-box .phone-number {
+  line-height: 4;
+}
+
+.contents-04-box.gray-box {
+  background: #eee;
+  margin-top: 40px;
+}
+
+.contents-04-box.gray-box .image {
+  display: block;
+  float: left;
+}
+
+.contents-04-box.gray-box .paragraph {
+  float: left;
+  width: calc(100% - 100px);
+  margin-left: 20px;
+}
+
+.footer {
+  background: #434547;
+  padding-top: 60px;
+}
+
+.footer-top .footer-article {
+  width: 33.333%;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.footer-article .image {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background: rgba(136, 136, 136, 0.1);
+  float: left;
+}
+
+.footer-article .paragraph {
+  color: #888;
+  float: left;
+  width: calc(100% - 100px);
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.footer-article .phone-number {
+  color: #888;
+  float: left;
+  width: calc(100% - 100px);
+  font-size: 24px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  color: #888;
+  padding: 30px 0;
+  border-top: 1px solid #888;
+  margin-top: 30px;
+}
